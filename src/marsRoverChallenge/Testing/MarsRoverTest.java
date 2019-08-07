@@ -25,7 +25,19 @@ class MarsRoverTest {
 		Assert.assertEquals("E", roverOne.getDirectionFacing());
 		roverOne.turnLeft();
 		Assert.assertEquals("N", roverOne.getDirectionFacing());
-		
+	}
+	
+	@Test
+	public void roverCanTurnRight() {
+		Rover roverOne = new Rover();
+		roverOne.turnRight();
+		Assert.assertEquals("E", roverOne.getDirectionFacing());
+		roverOne.turnRight();
+		Assert.assertEquals("S", roverOne.getDirectionFacing());
+		roverOne.turnRight();
+		Assert.assertEquals("W", roverOne.getDirectionFacing());
+		roverOne.turnRight();
+		Assert.assertEquals("N", roverOne.getDirectionFacing());
 		
 	}
 
