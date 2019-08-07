@@ -15,6 +15,20 @@ public class Rover {
 	
 //	Methods
 	public void turnLeft() {
+		switch (this.directionFacing) {
+			case "N":
+				this.directionFacing = "W";
+				break;
+			case "W":
+				this.directionFacing = "S";
+				break;
+			case "S": 
+				this.directionFacing = "E";
+				break;
+			case "E":
+				this.directionFacing = "N";
+				break;
+		}
 		
 	}
 	public void turnRight() {
