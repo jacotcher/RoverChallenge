@@ -11,7 +11,7 @@ class MarsRoverTest {
 	@Test
 	public void roverIsInitiated() {
 		Rover roverOne = new Rover();
-		Assert.assertEquals("N", roverOne.getDirectionFacing());
+		Assert.assertNotNull(roverOne);
 	}
 	
 	@Test

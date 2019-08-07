@@ -4,12 +4,12 @@ public class Rover {
 	
 	private int leftCoordinate;
 	private int rightCoordinate;
-	private String directionFacing = "N"; 
+	private String directionFacing;
 
 	public Rover(){
 //		this.leftCoordinate = leftCoordinate;
 //        this.rightCoordinate = rightCoordinate;
-        this.directionFacing = directionFacing;
+        this.directionFacing = "N";
         
     }
 	
