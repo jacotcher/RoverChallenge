@@ -7,8 +7,8 @@ public class Rover {
 	private String directionFacing = "N"; 
 
 	public Rover(){
-		this.leftCoordinate = leftCoordinate;
-        this.rightCoordinate = rightCoordinate;
+//		this.leftCoordinate = leftCoordinate;
+//        this.rightCoordinate = rightCoordinate;
         this.directionFacing = directionFacing;
         
     }
@@ -49,7 +49,20 @@ public class Rover {
 		
 	}
 	public void move() {
-		
+		switch (this.directionFacing) {
+		case "N":
+			this.rightCoordinate += 1;
+			break;
+		case "E":
+			this.leftCoordinate += 1;
+			break;
+		case "S": 
+			this.rightCoordinate -= 1;
+			break;
+		case "W":
+			this.leftCoordinate -= 1;
+			break;
+		}
 	}
 
 	
