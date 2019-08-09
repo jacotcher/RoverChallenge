@@ -7,8 +7,21 @@ package marsRoverChallenge;
  */
 public class Rover {
 	
+	/** 
+	 * Name is the variable given to identify a rover
+	 */
+	private String name;
+	/**
+	 * leftCoordinate is the left coordinate of the current position of the rover.
+	 */
 	private int leftCoordinate;
+	/**
+	 * rightCoordinate is the right coordinate of the current position of the rover 
+	 */
 	private int rightCoordinate;
+	/**
+	 * directionFacing is the current direction that the rover is facing.
+	 */
 	private String directionFacing;
 	/**
 	 * plateau is an instance of Plateau that this Rover is navigating
@@ -18,10 +31,12 @@ public class Rover {
 	/**
 	 * Constructor method for creating the rover
 	 * @author James Cotcher
-	 * @param plateau - an instance of the Plateau object that the rover will be 'navigating'
+	 * @param plateau an instance of the Plateau object that the rover will be 'navigating'
+	 * @param name The name of the rover, used for identification purposes.
 	 */
-	public Rover(Plateau plateau){
+	public Rover(Plateau plateau, String name){
         this.plateau = plateau;
+        this.name = name;
         
     }
 	
@@ -78,7 +93,7 @@ public class Rover {
 			if((this.rightCoordinate + 1) <= this.plateau.getHeight()) {
 				this.rightCoordinate += 1;
 			} else {
-				System.out.println("If you moved any more north, the rover would fall off the plateau!");
+				System.out.println("If you moved any more north, the rover would fall off the plateau! This 'move' instruction was ignored.");
 			}
 			break;
 			
@@ -86,7 +101,7 @@ public class Rover {
 			if((this.leftCoordinate + 1) <= this.plateau.getWidth()) {
 				this.leftCoordinate += 1;
 			} else {
-				System.out.println("If you moved any more east, the rover would fall off the plateau!");
+				System.out.println("If you moved any more east, the rover would fall off the plateau! This 'move' instruction was ignored.");
 			}
 			break;
 			
@@ -94,7 +109,7 @@ public class Rover {
 			if((this.rightCoordinate - 1) >= 0) {
 				this.rightCoordinate -= 1;
 			} else {
-				System.out.println("If you moved any more south, the rover would fall off the plateau!");
+				System.out.println("If you moved any more south, the rover would fall off the plateau! This 'move' instruction was ignored.");
 			}
 			break;
 			
@@ -102,7 +117,7 @@ public class Rover {
 			if((this.leftCoordinate - 1) >= 0) {
 				this.leftCoordinate -= 1;
 			} else {
-				System.out.println("If you moved any more west, the rover would fall off the plateau!");
+				System.out.println("If you moved any more west, the rover would fall off the plateau! This 'move' instruction was ignored.");
 			}
 			break;
 		}
@@ -137,6 +152,16 @@ public class Rover {
 	public String locationToString() {
 		return leftCoordinate + " "+ rightCoordinate + " " + directionFacing;
 	}
+	
+	/**
+	 * 
+	 * getName returns the name of the rover used for identification purposes
+	 * @return name The name of the rover used for identification purposes
+	 */
+	public String getName() {
+		return this.name;
+	}
+	
 
 	/**
 	 * getLeftCoordinate will get the left coordinate of the Rover's position

@@ -12,8 +12,8 @@ public class Plateau {
 	/**
 	 * Constructor method that sets the size of the plateau
 	 * @author James Cotcher
-	 * @param 'width' an integer that is equivalent to the left coordinate of the top right of the plateau
-	 * @param 'height' an integer that is equivalent to the right coordinate of the top right of the plateau
+	 * @param width an integer that is equivalent to the left coordinate of the top right of the plateau
+	 * @param height an integer that is equivalent to the right coordinate of the top right of the plateau
 	 */
 	public Plateau(int width, int height) {
 		this.width = width;
