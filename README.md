@@ -1,6 +1,6 @@
 # MarsRoverChallenge
 MarsRoverChallenge is a Java project that takes various inputs and uses them to define a plateau and initialise two Rover objects. It then takes instructions on moving the Rovers and outputs their final location and orientation to the terminal.
-Java documentation can be accessed in the 'Doc' directory where you will find index.html, all methods and classes are further explained here.
+Java documentation can be accessed in the 'Doc' directory where you will find index.html, all methods and classes are further explained there.
 ## Installation
 
 The system has been designed so that no installation should be required. Simply compile and run MarsPlateau.java by entering the following commands on a terminal after navigating to the "marsRoverChallenge" Directory: 
